@@ -72,7 +72,15 @@ int main()
     //1-A-1.  Display the value of the board at location of r and c
     //1-A-2. Display a space
     //1-B. Display an newline to move to the next row of the board
-    
+    for(int r=0; r<ROWS; r++)
+    {
+
+    for(int c=0; c<COLUMNS; c++)
+    {
+    cout<<board[r][c]<<" ";
+    }
+    cout<<endl;
+    }
   }while( playing );
 
   cout<<"Goodbye!\n";
